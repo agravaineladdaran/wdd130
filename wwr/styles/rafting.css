@@ -1,8 +1,9 @@
 :root{
-    --primary-color: #4A6FA5; /*Steel Blue*/
-    --secondary-color: #DBE9EE; /*Powder Blue or Icy Sky Blue*/
-    --accent1-color: #8E9775; /*Moss Green or Sage Olive*/
-    --accent2-color: #2D2D2D; /*Charcoal or Dark Graphite*/
+    --primary-color: #B9D6F2;
+    --secondary-color: #061A40;
+    --accent1-color: #21615b;
+    --accent2-color:  #e9dd71;
+    --accent3-color: rgba(152, 29, 29, 0.945);
     --heading-font: "Outfit";
     --body-font: "Quicksand";
 }
@@ -23,9 +24,95 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    border-bottom: 10px solid white;
+    margin: 1rem auto;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.history-content p {
+    width: 30%;
+}
+
+.history-img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--secondary-color); /* Dark navy text */
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 1rem;
+    font-family: var(--heading-font);
+    /*padding: 6px 10px;
+    border-radius: 6px; */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    font-weight: 700;
+    color: var(--accent3-color);
+    text-decoration: underline;
+}
+
+header nav a.active {
+    font-weight: 300;
+}
+
+header img {
+    max-height: 80px; /* Adjust as needed (50–80px is typical) */
+    height: auto;
+    margin-left: 1rem;
+}
+
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+
 h1,h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--secondary-color)
+    
+}
+
+.history {
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+    
 }
 
 nav, p, section, article {
@@ -33,12 +120,9 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
+    display: flex;
 }
 
 .hero img{
@@ -49,7 +133,7 @@ nav, p, section, article {
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 30px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -61,11 +145,11 @@ h1 {
 
 .hero article {
     position: absolute;
-    top: 450px; 
+    top: 360px; 
     left: 0;
     right: 0;
-    margin: 0 20px;
-    background-color: var(--secondary-color);
+    margin: 0 20px; 
+    background-color: var(--accent2-color);
     padding: 5px 20px;
     border-radius: 8px;
     display: flex;
@@ -84,7 +168,72 @@ h1 {
 }
 
 .hero article p {
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     margin: 0;
 }
 
+.adventure {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.adventure h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 150px;
+    max-width: 180px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-top: 2px solid #ccc;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.socialmedia figure {
+    margin: 0;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
