@@ -21,9 +21,9 @@ blockquote {
 	margin:100px;
 }
 
-cite {
+.cite {
 	display: inside;
-    top border: 10px;
+    top order: 10px;
     top padding: 10px;
     text alignment: :left;
     font-size: 20px;

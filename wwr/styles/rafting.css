@@ -240,3 +240,170 @@ footer {
     height: 30px;
     object-fit: contain;
 }
+
+/* =======================
+   CONTACT US PAGE STYLES
+   ======================= */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* space between contact info and map */
+    margin: 40px 0; /* space above and below the section */
+}
+
+.contact-info {
+    flex: 1;
+    font-family: var(--body-font);
+    max-width: 400px;
+    font-size: 0.95rem; /* smaller text */
+    line-height: 1.6; /* more breathing room */
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.section-divider {
+    border-top: solid #ddd;
+}
+
+/* Add more space before "Meet the Team" */
+.employees {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.employees h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.employees .employee {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.employees img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* smaller base font */
+}
+
+.contact-form h2 {
+    font-size: 1.2rem; /* was too large */
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.contact-form p {
+    font-size: 0.85rem; /* subtle, smaller */
+    color: #666;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Name + Email side by side */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.85rem; /* smaller input text */
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Inline radios & checkbox */
+.form-row-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin: 10px 0;
+    white-space: nowrap; /* Prevent text from breaking */
+}
+
+.form-row-inline label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    white-space: nowrap; /* Keep label text on one line */
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.form-submit button {
+    background-color: #0077b6;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.form-submit button:hover {
+    background-color: #005f87;
+}
+
+/* Responsive: stack fields */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-part {
+    background: linear-gradient(135deg, #f0f4f8, #d9e4ec); /* gradient background */
+    padding: 50px 0; /* space above & below the form */
+}
+
