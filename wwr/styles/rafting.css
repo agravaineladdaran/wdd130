@@ -128,13 +128,22 @@ nav, p, section, article {
     display: flex;
 }
 
+
 .hero img{
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+header h1 {
+    background-color: transparent; /* or a new color */
+    margin: 0; 
+    padding: 1rem 0;
+}
+
+
+/* Hero banner h1 only */
+.hero h1 {
     position: absolute;
     top: 30px;
     width: 100%;
@@ -144,6 +153,18 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
 }
+
+/* Normal page h1 (not inside hero) */
+main h1 {
+    position: static; /* reset absolute positioning */
+    background-color: transparent;
+    color: var(--secondary-color);
+    opacity: 1;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left; /* or center if you want */
+}
+
 
 
 .hero article {
