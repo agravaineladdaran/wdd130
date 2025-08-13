@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Agravaine Aevon Loraine Laddaran">
-    <meta name="description" content="Contact Us page for the Water Rafting website. Find important contacts here."> 
-    <title>Contact Us</title>
+    <meta name="description" content="Get in touch with White Water Rafting for questions, bookings, or information about our adventures.">
+    <title>Contact Us | White Water Rafting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         <!-- Contact Info -->
         <section class="contact-section">
             <div class="contact-info">
-                <h2>Contact Information</h2>
+                <h1>Contact Information</h1>
                 <p>📍 Riverview Dr, Cagayan De Oro City, Misamis Oriental, Philippines</p>
                 <p>📧 cdo.riverview@example.com</p>
                 <p>📞 (0912) 345-6789</p>
@@ -76,10 +76,15 @@
                     </div>
 
                     <div class="form-row-inline">
-                        <label>Purpose:</label>
-                        <label><input type="radio" name="purpose" value="question" required> Question</label>
-                        <label><input type="radio" name="purpose" value="comment"> Comment</label>
-                        <label><input type="radio" name="purpose" value="hiring"> Hiring</label>
+                        <label for="purpose-question">
+                            <input type="radio" id="purpose-question" name="purpose" value="question" required> Question
+                        </label>
+                        <label for="purpose-comment">
+                            <input type="radio" id="purpose-comment" name="purpose" value="comment"> Comment
+                        </label>
+                        <label for="purpose-hiring">
+                            <input type="radio" id="purpose-hiring" name="purpose" value="hiring"> Hiring
+                        </label>
                     </div>
 
                     <div>
@@ -88,8 +93,11 @@
                     </div>
 
                     <div class="form-row-inline">
-                        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                        <label for="subscribe">
+                            <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+                        </label>
                     </div>
+
 
                     <div class="form-submit">
                         <button type="submit">Send Message</button>
