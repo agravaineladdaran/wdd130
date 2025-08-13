@@ -22,93 +22,85 @@
             </nav>
         </header>
         <main>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <main>
-       <section class="contact-section">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>📍 Riverview Dr, Cagayan De Oro City, Misamis Oriental, Philippines</p>
-                <p>📧 cdo.riverview@example.com</p>
-                <p>📞 (0912) 345-6789</p>
-            </div>
-            <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252670.47754252164!2d124.30822028671874!3d8.3051624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff86757a34a90d%3A0x91d3c6b38fa98df2!2sCDO%20White%20Water%20Rafting!5e0!3m2!1sen!2sph!4v1755093825639!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+    <body>
+        <main>
+        <section class="contact-section">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>📍 Riverview Dr, Cagayan De Oro City, Misamis Oriental, Philippines</p>
+                    <p>📧 cdo.riverview@example.com</p>
+                    <p>📞 (0912) 345-6789</p>
+                </div>
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252670.47754252164!2d124.30822028671874!3d8.3051624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff86757a34a90d%3A0x91d3c6b38fa98df2!2sCDO%20White%20Water%20Rafting!5e0!3m2!1sen!2sph!4v1755093825639!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
 
-        <div class="section-divider"></div>
+            <div class="section-divider"></div>
 
-        <!-- Employee Profiles -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="employee">
-                <img src="images/employee1.webp" alt="Employee 1">
-                <p><strong>Guillermo, Lyca</strong><br>Manager</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee2.webp" alt="Employee 2">
-                <p><strong>Reyes, Rick</strong><br>Customer Support</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.webp" alt="Employee 3">
-                <p><strong>Smith, Caleb</strong><br>Sales Representative</p>
-            </div>
-        </section>
+            <!-- Employee Profiles -->
+            <section class="employees">
+                <h2>Meet Our Team</h2>
+                <div class="employee">
+                    <img src="images/employee1.webp" alt="Employee 1">
+                    <p><strong>Guillermo, Lyca</strong><br>Manager</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee2.webp" alt="Employee 2">
+                    <p><strong>Reyes, Rick</strong><br>Customer Support</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee3.webp" alt="Employee 3">
+                    <p><strong>Smith, Caleb</strong><br>Sales Representative</p>
+                </div>
+            </section>
 
-        <div class="section-divider"></div>
+            <div class="section-divider"></div>
 
-       <!-- Contact Section with background -->
-        <section class="contact-part">
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <p>We’ll respond within 24 hours.</p>
+        <!-- Contact Section with background -->
+            <section class="contact-part">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <p>We’ll respond within 24 hours.</p>
 
-                <form action="#" method="post">
-                    <div class="form-grid">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                    <form action="#" method="post">
+                        <div class="form-grid">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+
+                        <div class="form-row-inline">
+                            <label>Purpose:</label>
+                            <label><input type="radio" name="purpose" value="question" required> Question</label>
+                            <label><input type="radio" name="purpose" value="comment"> Comment</label>
+                            <label><input type="radio" name="purpose" value="hiring"> Hiring</label>
                         </div>
-                    </div>
 
-                    <div class="form-row-inline">
-                        <label>Purpose:</label>
-                        <label><input type="radio" name="purpose" value="question" required> Question</label>
-                        <label><input type="radio" name="purpose" value="comment"> Comment</label>
-                        <label><input type="radio" name="purpose" value="hiring"> Hiring</label>
-                    </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="3" required></textarea>
+                        </div>
 
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="3" required></textarea>
-                    </div>
+                        <div class="form-row-inline">
+                            <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                        </div>
 
-                    <div class="form-row-inline">
-                        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
-                    </div>
-
-                    <div class="form-submit">
-                        <button type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+                        <div class="form-submit">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
 
-        </main>
+            </main>
         <footer>
             <p>©2025 | White Water Rafting | Agravaine Aevon Loraine Laddaran</p>
             <nav class="socialmedia">
